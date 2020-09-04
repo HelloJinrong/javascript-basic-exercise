@@ -7,6 +7,10 @@ export default function formatNumber(number, option) {
   //
   // * Please implement the function and pass all the tests in format_number_spec.js.
   // * Please do NOT modify the signature of the function.
-
-  throw new Error('Please delete this line and implement the function');
+  // eslint-disable-next-line no-param-reassign
+  if (option)
+  {
+    return '$ ' + number.toFixed(2);
+  }else
+    return number.toFixed(2);
 }
